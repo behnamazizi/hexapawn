@@ -5,4 +5,4 @@ Play here: http://bit.ly/2XhtLD5
 
 More information about Hexapawn: 
 - https://en.wikipedia.org/wiki/Hexapawn
-- https://www.youtube.com/watch?v=sw7UAZNgGg8&t=309s
+- https://youtu.be/sw7UAZNgGg8
