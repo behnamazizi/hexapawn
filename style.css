@@ -267,3 +267,20 @@ body.computer #points span:first-child {
     box-shadow: inset 0 -5px 0 #0000005c, 0 13px 20px #00000045, 0 6px 9px #00000045;
     cursor: pointer;
 }
+.links {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 250px;
+    justify-content: space-around;
+}
+.links li {
+    font-family: monospace, sans-serif;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
