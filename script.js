@@ -21,6 +21,13 @@ function draw() {
         document.body.insertAdjacentHTML("beforeend", `<div id="${pawn}" class="pawn human" onmousedown="drag(this)" ontouchstart="drag(this)"></div>`);
     })
     document.body.insertAdjacentHTML("beforeend", `<div id="points"><span>${points[0]}</span><span>${points[1]}</span></div>`);
+    document.body.insertAdjacentHTML("beforeend", `
+        <ul class="links">
+        <li><a target="_blank" href="https://youtu.be/sw7UAZNgGg8">WTF?</a></li>
+        <li><a target="_blank" href="https://en.wikipedia.org/wiki/Hexapawn">More About</a></li>
+        <li><a target="_blank" href="https://github.com/behnamazizi/hexapawn">Fork on Github</a></li>
+    </ul>
+    `);
 
     turn++
     document.body.classList.remove('human', 'computer')
