@@ -59,7 +59,6 @@ function draw() {
 }
 
 function drag(el) {
-    new Audio('snd/drag.mp3').play()
     dragEl = el;
     document.body.onmousemove = sticker;
     document.body.ontouchmove = sticker;
@@ -79,7 +78,6 @@ function drag(el) {
 
 function drop(e) {
     if (dragEl != '') {
-        new Audio('snd/drop.mp3').play()
         dragEl.classList.remove('drag')
         document.body.onmousemove = '';
         document.body.ontouchmove = '';
@@ -160,7 +158,6 @@ function isAllow(curentId, event, dropTarget) {
 
 function computerMove() {
     setTimeout(() => {
-        new Audio('snd/drop.mp3').play()
         pMoves = posiblemoves('computer')
         let possibilities = {};
         pMoves.forEach(move => {
@@ -200,8 +197,8 @@ function isWon() {
         turn = 0;
         
         winner === 'computer' ?
-        (winnerpos = snapshot[snapshot.length - 1], snapshot = '', points[0]++, new Audio('snd/lost.wav').play()):
-        (badIdeas.push(snapshot), snapshot = '', points[1]++, new Audio('snd/win.wav').play());
+        (winnerpos = snapshot[snapshot.length - 1], snapshot = '', points[0]++):
+        (badIdeas.push(snapshot), snapshot = '', points[1]++);
         
         alerter(winner.toUpperCase() + ' WIN!')
         document.body.insertAdjacentHTML('afterBegin', `<div id="winnerspot" class="${winner} ${winnerpos}"></div>`)

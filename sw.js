@@ -3,12 +3,8 @@ self.addEventListener('install', (e) => {
         caches.open('v1').then((cache) => cache.addAll([
             '/hexapawn/',
             '/hexapawn/index.html',
-            '/hexapawn/snd/drag.mp3',
-            '/hexapawn/snd/drop.mp3',
-            '/hexapawn/snd/lost.wav',
-            '/hexapawn/snd/win.wav',
-            '/hexapawn/img/fav.png',
             '/hexapawn/css/style.css',
+            '/hexapawn/js/script.js',
 
         ]))
     )
