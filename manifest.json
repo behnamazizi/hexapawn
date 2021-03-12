@@ -4,7 +4,7 @@
     "description": "The goal of each player is to advance one of their pawns to the opposite end of the board or to prevent the other player from moving.",
     "dir": "ltr",
     "lang": "en-US",
-    "start_url": "/index.html",
+    "start_url": "/hexapawn/index.html",
     "scope": "/hexapawn/",
     "display": "standalone",
     "orientation": "portrait-primary",
