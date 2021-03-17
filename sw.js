@@ -1,5 +1,3 @@
-
-
 const CacheName = '0_45_18_Mar_21';
 const assets = [
     '/hexapawn/',
