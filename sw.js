@@ -1,4 +1,4 @@
-const CacheName = '0_45_18_Mar_21';
+const CacheName = '0_50_18_Mar_21';
 const assets = [
     '/hexapawn/',
     '/hexapawn/index.html',
