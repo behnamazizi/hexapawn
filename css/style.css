@@ -272,7 +272,7 @@ body.computer #points span:first-child {
     position: fixed;
     bottom: 120px;
     left: 0;
-    width: 100vh;
+    width: 100vw;
     height: calc(100vh - 120px);
     z-index: -1;
     background-color: #0000005c;
