@@ -246,8 +246,7 @@ body.computer #points span:first-child {
     z-index: 9999;
     box-shadow: inset 0 -5px 0 #0000005c, 0 75px 60px #00000045, 0 18px 27px #00000045;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 100px;
+    grid-template: 1fr / repeat(2, 150px);
     padding: 30px;
     box-sizing: border-box;
     align-items: center;
@@ -257,6 +256,7 @@ body.computer #points span:first-child {
     font-size: 15px;
     bottom: 0;
     left: 0;
+    animation: pop .5s ease-out 0s 1 forwards normal;
 }
 #alert button {
     width: 100px;
@@ -267,14 +267,34 @@ body.computer #points span:first-child {
     box-shadow: inset 0 -5px 0 #0000005c, 0 13px 20px #00000045, 0 6px 9px #00000045;
     cursor: pointer;
 }
-#alert:after{
-    content:"";
+#alert:after {
+    content: "";
     position: fixed;
-    bottom: 0;
+    bottom: 120px;
     left: 0;
     width: 100vh;
-    height: 100vh;
+    height: calc(100vh - 120px);
     z-index: -1;
+    background-color: #0000005c;
+    animation: fadeIn 1s ease-out .5s 1 forwards normal;
+    opacity:0 ;
+}
+
+@keyframes pop{
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity:0 ;
+    }
+    100%{
+        opacity:1 ;
+    }
 }
 .links {
     position: fixed;
