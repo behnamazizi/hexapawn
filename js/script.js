@@ -200,7 +200,7 @@ function isWon() {
         (winnerpos = snapshot[snapshot.length - 1], snapshot = '', points[0]++):
         (badIdeas.push(snapshot), snapshot = '', points[1]++);
         
-        alerter(winner.toUpperCase() + ' WIN!')
+        alerter(winner.toUpperCase() + ' WON!')
         document.body.insertAdjacentHTML('afterBegin', `<div id="winnerspot" class="${winner} ${winnerpos}"></div>`)
         
     }else{
